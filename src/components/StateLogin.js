@@ -1,7 +1,8 @@
 
-import Input from "./input";
+// import Input from "./Input.js";
 import { isEmail, isNotEmpty, hasMinLength } from '../util/validation.js';
 import { useInput } from "../hooks/useInput.js";
+import { Input } from './Input.js';
 
 
 
