@@ -21,6 +21,9 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    
+
     // console.log("entered value==== "  + JSON.stringify(enteredValues));
       }
 
@@ -65,7 +68,9 @@ export default function Login() {
             onChange={(event) => handleInputChange('email', event.target.value)}
             value={enteredValues.email}
           />
-          <div className="control-error">{emailIsInvalid && <p>Please enter a valid email address.</p>}</div>
+          <div className="control-error">
+            {emailIsInvalid && <p>Please enter a valid email address.</p>}
+          </div>
         </div>
 
         <div className="control no-margin">
