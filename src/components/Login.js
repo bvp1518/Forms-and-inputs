@@ -2,7 +2,6 @@ import { useRef } from "react";
 
 
 export default function Login() {
- 
   const email = useRef();
   const password = useRef();
 
@@ -14,6 +13,7 @@ export default function Login() {
     const enteredPassword = password.current.value;
 
     console.log(enteredEmail,enteredPassword);
+  
   }
 
   return (

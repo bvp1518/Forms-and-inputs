@@ -6,20 +6,20 @@ export default function Login() {
   // const [enteredPassword, setEnteredPassword] = useState('');
 
   const [enteredValues, setEnteredValues] = useState({
-    email:'',
-    password:'',
+    email: '',
+    password: '',
   });
 
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("entered value==== "  + JSON.stringify(enteredValues));
-  }
+    // console.log("entered value==== "  + JSON.stringify(enteredValues));
+      }
 
-  function handleInputChange(identifier, value){
+  function handleInputChange(identifier, value) {
     setEnteredValues((prevValues) => ({
-       ...prevValues,
-       [identifier]: value,
+      ...prevValues,
+      [identifier]: value,
     }));
   }
 
@@ -42,7 +42,7 @@ export default function Login() {
             id="email"
             type="email"
             name="email"
-            onChange={(event) => handleInputChange('email',event.target.value)}
+            onChange={(event) => handleInputChange('email', event.target.value)}
             value={enteredValues.email}
           />
         </div>
@@ -55,7 +55,7 @@ export default function Login() {
             name="password"
             onChange={(event) => handleInputChange('password', event.target.value)}
             value={enteredValues.password}
-         />
+          />
         </div>
       </div>
 
