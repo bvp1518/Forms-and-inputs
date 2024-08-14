@@ -1,4 +1,4 @@
-export default function Input({ label,id, error, ...props }){
+export function Input({ label,id, error, ...props }){
     return (
         <div className="control no-margin">
           <label htmlFor={id}>{label}</label>
